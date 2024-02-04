@@ -2,14 +2,14 @@ import { users } from "@/app/util/db";
 import { NextResponse } from "next/server";
 import fs from "fs";
 
-// Filter user by id
+// Filter user by id 
 
 export async function GET(_, res) {
     const {id} = await res.params
     const user = users.filter((user) => (
         user.id === id
     ))
-    return NextResponse.json({ user })
+    return NextResponse.json({ user, ok: true })
 }
 
 // 3 Login 
