@@ -9,7 +9,7 @@ const DeleteUser = () => {
         e.preventDefault();
 
         if (!id) {
-            alert("Provide id to delete User")
+            alert("Provide id to delete user")
             return;
         }
 
